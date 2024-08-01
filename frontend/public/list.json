@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "price": 0,
+    "category": "Free",
+    "name": "Mystic Realms",
+    "image": "https://m.media-amazon.com/images/I/81h-fBEfTOL._SY425_.jpg",
+    "description": "Embark on a journey through Mystic Realms, where young heroes uncover secrets and forge bonds in a land of magic and wonder."
+  },
+  {
+    "id": 2,
+    "price": 50,
+    "category": "Adventurous",
+    "name": "The Enchanted Quest",
+    "image": "https://i.pinimg.com/564x/4b/5e/05/4b5e0591f51f5c2235bbc0dee864e162.jpg",
+    "description": "Join adventurers on The Enchanted Quest, a thrilling journey through mystical lands with magical creatures, hidden treasures, and epic challenges."
+  },
+  {
+    "id": 3,
+    "price": 30,
+    "category": "Story",
+    "name": "Wonders of Everdream",
+    "description": "Step into Everdream, a world where every corner reveals mysteries, and a brave heart can alter the realm's fate.",
+    "image": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/software/switch/70010000064195/desc/b690b967d35c584643df629eb11e70bfba15c169535169cd2d009a6c2c747b4c"
+  },
+  {
+    "id": 4,
+    "price": 0,
+    "category": "Free",
+    "name": "Nightmare's End",
+    "image": "https://cdn2.penguin.com.au/covers/original/9781448193240.jpg",
+    "description": "Experience Nightmare's End, where a town is plagued by nightmares, and one brave soul must uncover the truth before darkness prevails."
+  },
+  {
+    "id": 5,
+    "price": 0,
+    "category": "Free",
+    "name": "Silent Screams",
+    "image": "https://jenmedsbookreviews.com/wp-content/uploads/2016/11/24483265.jpg",
+    "description": "Discover the chilling silence of a town plagued by eerie disappearances, where hidden terrors lurk and screams remain unheard."
+  },
+  {
+    "id": 6,
+    "price": 70,
+    "category": "Adventurous",
+    "name": "Echoes of Eternity",
+    "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781804073605/echoes-of-eternity-9781804073605_lg.jpg",
+    "description": "In Echoes of Eternity, follow the path of an ancient prophecy that binds a group of unlikely heroes together to save their world."
+  },
+  {
+    "id": 7,
+    "price": 90,
+    "category": "Adventurous",
+    "name": "Legends of the Lost Realm",
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/01/Legends_of_the_Lost_Realm_cover.jpg",
+    "description": "Legends of the Lost Realm takes readers on an epic adventure through forgotten lands where ancient secrets await discovery."
+  },
+  {
+    "id": 8,
+    "price": 0,
+    "category": "Free",
+    "name": "Shadow of the Dragons",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/94/Kira_cover.jpg",
+    "description": "Uncover the Shadow of the Dragons, a tale of bravery and destiny in a land where dragons reign supreme and heroes are born."
+  },
+  {
+    "id": 9,
+    "price": 100,
+    "category": "Story",
+    "name": "Realm of the Fallen",
+    "image": "https://m.media-amazon.com/images/I/51uaDS9fRcL._SY445_SX342_.jpg",
+    "description": "Explore the Realm of the Fallen, where a fallen hero must rise again to save the world from an impending doom."
+  },
+  {
+    "id": 10,
+    "price": 0,
+    "category": "Free",
+    "name": "Chronicles of the Forgotten",
+    "image": "https://m.media-amazon.com/images/I/71abuYDU2HL._SY425_.jpg",
+    "description": "Dive into the Chronicles of the Forgotten, an epic saga of ancient magic, lost civilizations, and the quest for eternal glory."
+  },
+  {
+    "id": 11,
+    "price": 150,
+    "category": "Horror",
+    "name": "The Haunting of Blackwood Manor",
+    "image": "https://m.media-amazon.com/images/I/81q5ZQwKgOL._SY425_.jpg",
+    "description": "Enter The Haunting of Blackwood Manor, where an ancient curse awakens dark spirits, and a group of friends must uncover the mansion's chilling secrets before it's too late."
+  },
+  {
+    "id": 12,
+    "price": 0,
+    "category": "Free",
+    "name": "Whispers of the Forest",
+    "image": "https://m.media-amazon.com/images/I/712riG6YvcL._SL1360_.jpg",
+    "description": "Whispers of the Forest tells the story of a mystical forest where every whisper reveals secrets and every path leads to adventure."
+  },
+  {
+    "id": 13,
+    "price": 0,
+    "category": "Free",
+    "name": "Voyage of the Celestial",
+    "image": "https://m.media-amazon.com/images/I/51J3Tsln0WL._SY445_SX342_.jpg",
+    "description": "Join the epic adventure of Voyage of the Celestial, where heroes rise, galaxies collide, and destiny unfolds among the stars."
+  },
+  {
+    "id": 15,
+    "price": 180,
+    "category": "Horror",
+    "name": "Echoes in the Dark",
+    "image": "https://m.media-amazon.com/images/I/91VXvJttsjL._SL1500_.jpg",
+    "description": "In Echoes in the Dark, a seemingly abandoned mansion hides secrets that defy comprehension. As a group of friends explores its shadowy corridors, they awaken vengeful spirits and confront their deepest fears in a nightmarish battle for survival."
+  },
+  {
+    "id": 15,
+    "price": 0,
+    "category": "Free",
+    "name": "Rise of the Phoenix",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1660615622i/61990534.jpg",
+    "description": "Experience the Rise of the Phoenix, where a fallen kingdom's only hope lies in the rebirth of a legendary hero."
+  }
+]
