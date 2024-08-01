@@ -41,7 +41,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             : "hover:text-white hover:bg-gray-700"
         }`}
       >
-        <a href="/">Course</a>
+        <a href="/courses">Course</a>
       </li>
       <li
         className={`rounded-md transition-all ease-in-out duration-300 ${

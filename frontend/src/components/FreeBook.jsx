@@ -14,7 +14,7 @@ const FreeBook = ({ darkMode }) => {
           veritatis voluptates?
         </p>
       </div>
-      <div className="md:mx-4 my-4 flex flex-wrap justify-center gap-8 rounded-md">
+      <div className="md:mx-4 mb-4 mt-8 flex flex-wrap justify-center gap-8 rounded-md">
         <Card darkMode={darkMode} />
       </div>
     </div>
