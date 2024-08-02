@@ -1,11 +1,7 @@
-import PropTypes from "prop-types";
-
-const Banner = ({ darkMode }) => {
+const Banner = () => {
   return (
     <div
-      className={`max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10 ${
-        darkMode ? "text-white" : ""
-      }`}
+      className={`max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10`}
     >
       <div className="order-2 md:order-1 w-full md:w-1/2 mt-12 md:mt-32">
         <div className="space-y-12">
@@ -43,11 +39,6 @@ const Banner = ({ darkMode }) => {
       </div>
     </div>
   );
-};
-
-Banner.propTypes = {
-  darkMode: PropTypes.bool.isRequired,
-  setDarkMode: PropTypes.func.isRequired,
 };
 
 export default Banner;

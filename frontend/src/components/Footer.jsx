@@ -1,8 +1,6 @@
-import PropTypes from "prop-types";
-
-const Footer = ({ darkMode }) => {
+const Footer = () => {
   return (
-    <div className={`mx-auto md:px-20 px-4  ${darkMode ? "!text-white" : ""}`}>
+    <div className={`mx-auto md:px-20 px-4`}>
       <div className="h-[1px] bg-gray-400"></div>
       <footer className="footer footer-center rounded p-10">
         <nav className="grid grid-flow-col gap-4">
@@ -59,11 +57,6 @@ const Footer = ({ darkMode }) => {
       </footer>
     </div>
   );
-};
-
-Footer.propTypes = {
-  darkMode: PropTypes.bool.isRequired,
-  setDarkMode: PropTypes.func.isRequired,
 };
 
 export default Footer;

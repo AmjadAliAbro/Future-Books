@@ -1,15 +1,13 @@
 import PropTypes from "prop-types";
 import "./Card.css";
 
-const Cards = ({ item, darkMode }) => {
+const Cards = ({ item }) => {
   return (
-    <div key={item.id} className="slider-card !flex justify-center">
-      <div className="w-64 xl:w-80 pb-8 flex flex-col shadow-lg rounded-md hover:scale-105 duration-300">
+    <div key={item.id} className="slider-card !flex justify-center mb-4">
+      <div className="w-64 xl:w-80 pb-8 flex flex-col shadow-xl rounded-md hover:scale-105 duration-300">
         <img src={item.image} alt="" className="w-80 h-96 rounded-t-md" />
         <div
-          className={`${
-            darkMode ? "!bg-[#141414] text-white " : "bg-[#ffffff]"
-          } rounded-b-md px-4 py-6 h-40 justify-center flex flex-col`}
+          className={` rounded-b-md px-4 py-6 h-40 justify-center flex flex-col`}
         >
           <h1 className="text-md font-bold flex items-center gap-2">
             {item.name}
@@ -22,7 +20,7 @@ const Cards = ({ item, darkMode }) => {
             <span className="border border-slate-600 rounded-full px-2">
               ${item.price}
             </span>
-            <a className="border border-slate-600 rounded-full px-2 cursor-pointer hover:bg-pink-500 hover:text-white hover:border-slate-600 hover:scale-110 transition-all ease-in-out duration-300">
+            <a className="border border-slate-600 rounded-full px-2 cursor-pointer hover:bg-pink-500 hover:text-white hover:border-slate-600 hover:scale-110 hover:duration-100">
               Buy Now
             </a>
           </div>
@@ -41,7 +39,6 @@ Cards.propTypes = {
     description: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
   }).isRequired,
-  darkMode: PropTypes.bool.isRequired,
 };
 
 export default Cards;

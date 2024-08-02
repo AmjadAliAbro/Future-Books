@@ -1,13 +1,9 @@
-import PropTypes from "prop-types";
+import PropType from "prop-types";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-const Navbar = ({ darkMode, setDarkMode }) => {
+const Navbar = ({ darkModeHandler }) => {
   const [sticky, setSticky] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -25,60 +21,50 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   const navItems = (
     <div className="flex flex-col md:flex-row gap-2">
-      <li
-        className={`rounded-md transition-all ease-in-out duration-300 ${
-          darkMode
-            ? "hover:text-black bg-black hover:bg-white"
-            : "hover:text-white hover:bg-gray-700"
-        }`}
-      >
-        <a href="/">Home</a>
+      <li>
+        <Link
+          className={`rounded-md duration-300 text-black dark:text-white hover:text-white hover:bg-slate-700 dark:hover:bg-slate-700`}
+          to="/"
+        >
+          Home
+        </Link>
       </li>
-      <li
-        className={`rounded-md transition-all ease-in-out duration-300 ${
-          darkMode
-            ? "hover:text-black  bg-black hover:bg-white"
-            : "hover:text-white hover:bg-gray-700"
-        }`}
-      >
-        <a href="/courses">Course</a>
+      <li>
+        <Link
+          className={`rounded-md duration-300 text-black dark:text-white hover:text-white hover:bg-slate-700 dark:hover:bg-slate-700`}
+          to="/courses"
+        >
+          Course
+        </Link>
       </li>
-      <li
-        className={`rounded-md transition-all ease-in-out duration-300 ${
-          darkMode
-            ? "hover:text-black bg-black hover:bg-white"
-            : "hover:text-white hover:bg-gray-700"
-        }`}
-      >
-        <a href="/">Contact</a>
+      <li>
+        <Link
+          className={`rounded-md duration-300 text-black dark:text-white hover:text-white hover:bg-slate-700 dark:hover:bg-slate-700`}
+          to="/"
+        >
+          Contact
+        </Link>
       </li>
-      <li
-        className={`rounded-md transition-all ease-in-out duration-300 ${
-          darkMode
-            ? "hover:text-black bg-black hover:bg-white"
-            : "hover:text-white hover:bg-gray-700"
-        }`}
-      >
-        <a href="/">About</a>
+      <li>
+        <Link
+          className={`rounded-md duration-300 text-black dark:text-white hover:text-white hover:bg-slate-700 dark:hover:bg-slate-700`}
+          to="/"
+        >
+          About
+        </Link>
       </li>
     </div>
   );
 
   return (
     <div
-      className={`max-w-screen-2xl container mx-auto md:px-20 fixed top-0 left-0 w-full z-10 ${
-        darkMode ? "bg-black" : "bg-white"
-      } ${
+      className={`max-w-screen-2xl container mx-auto md:px-20 fixed top-0 left-0 w-full z-10 bg-white dark:text-white dark:bg-slate-900 ${
         sticky
           ? "sticky-navbar text-[#3b3a3a] shadow-md transition-all duration-300 ease-in-out"
           : ""
       }`}
     >
-      <div
-        className={`navbar flex justify-between items-center lg:p-4 ${
-          darkMode ? "text-white" : ""
-        }`}
-      >
+      <div className={`navbar flex justify-between items-center lg:p-4`}>
         <div className="navbar-start flex items-center">
           <div className="dropdown lg:hidden">
             <div
@@ -127,6 +113,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             } rounded-md hidden md:flex items-center gap-2`}
           >
             <input
+              onClick={() => darkModeHandler()}
               type="text"
               className="grow outline-none bg-transparent"
               placeholder="Search"
@@ -149,7 +136,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               type="checkbox"
               className="theme-controller"
               value="synthwave"
-              onClick={toggleDarkMode}
+              onClick={() => darkModeHandler()}
             />
             <svg
               className="swap-off h-7 w-7 fill-current"
@@ -167,15 +154,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </svg>
           </label>
           <div>
-            <a
-              className={`${
-                darkMode
-                  ? "bg-white !text-black hover:bg-slate-800 hover:!text-white"
-                  : "bg-black text-white hover:bg-gray-600 hover:text-white"
-              } px-3 py-2 rounded-md duration-300 cursor-pointer`}
+            <Link
+              to="/login"
+              className={`px-3 py-2 rounded-md duration-300 cursor-pointer bg-slate-900 text-white hover:bg-slate-700 dark:bg-white dark:text-black dark:hover:bg-slate-800 dark:hover:text-white`}
             >
               Login
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -184,8 +168,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 };
 
 Navbar.propTypes = {
-  darkMode: PropTypes.bool?.isRequired,
-  setDarkMode: PropTypes.func?.isRequired,
+  darkModeHandler: PropType.func.isRequired,
 };
 
 export default Navbar;

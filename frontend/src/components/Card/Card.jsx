@@ -1,12 +1,11 @@
 import "./Card.css";
 import Cards from "./Cards";
 import Slider from "react-slick";
-import PropTypes from "prop-types";
 import "slick-carousel/slick/slick.css";
 import list from "../../../public/list.json";
 import "slick-carousel/slick/slick-theme.css";
 
-const Card = ({ darkMode }) => {
+const Card = () => {
   const settings = {
     dots: true,
     arrows: false,
@@ -46,18 +45,14 @@ const Card = ({ darkMode }) => {
   const filteredData = list.filter((data) => data.category === "Free");
 
   return (
-    <div className={`slider-container ${darkMode ? "dark-mode" : ""}`}>
+    <div className={`slider-container`}>
       <Slider {...settings}>
         {filteredData.map((item) => (
-          <Cards item={item} key={item.id} darkMode={darkMode} />
+          <Cards item={item} key={item.id} />
         ))}
       </Slider>
     </div>
   );
-};
-
-Card.propTypes = {
-  darkMode: PropTypes.bool.isRequired,
 };
 
 export default Card;

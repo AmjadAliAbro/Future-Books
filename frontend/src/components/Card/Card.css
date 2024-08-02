@@ -21,10 +21,10 @@
   color: #333;
 }
 
-.dark-mode .slick-dots li button:before {
+.dark .slick-dots li button:before {
   color: #999;
 }
 
-.dark-mode .slick-dots li.slick-active button:before {
+.dark .slick-dots li.slick-active button:before {
   color: #fff;
 }
