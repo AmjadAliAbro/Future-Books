@@ -40,7 +40,7 @@ const Navbar = ({ darkModeHandler }) => {
       <li>
         <Link
           className={`rounded-md duration-300 text-black dark:text-white hover:text-white hover:bg-slate-700 dark:hover:bg-slate-700`}
-          to="/"
+          to="/contact"
         >
           Contact
         </Link>
@@ -48,7 +48,7 @@ const Navbar = ({ darkModeHandler }) => {
       <li>
         <Link
           className={`rounded-md duration-300 text-black dark:text-white hover:text-white hover:bg-slate-700 dark:hover:bg-slate-700`}
-          to="/"
+          to="/about"
         >
           About
         </Link>

@@ -15,8 +15,8 @@ const SignUp = () => {
           </h1>
           <form>
             <input
-              type="text"
-              placeholder="Email address or phone number"
+              type="email"
+              placeholder="Email address"
               className="w-full p-3 mb-3 border border-gray-300 rounded outline-none"
               required
             />
@@ -38,10 +38,12 @@ const SignUp = () => {
             >
               Sign Up
             </button>
-            <Link to="/login" className="block mt-3 text-center">
-              Already have an account?{" "}
-              <span className="text-blue-500">Log in</span>
-            </Link>
+            <div className="flex items-center justify-center gap-1 mt-3">
+              <p>Already have an account?</p>
+              <Link to="/login" className="text-blue-500 hover:text-blue-700">
+                Log in
+              </Link>
+            </div>
           </form>
         </div>
       </div>

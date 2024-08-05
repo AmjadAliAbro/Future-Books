@@ -22,7 +22,7 @@ const Login = () => {
           <form>
             <input
               type="text"
-              placeholder="Email address or phone number"
+              placeholder="Email Address"
               className="w-full p-3 mb-3 border border-gray-300 rounded outline-none"
               required
             />
